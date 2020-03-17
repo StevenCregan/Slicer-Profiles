@@ -1,7 +1,16 @@
 # Slicer Profiles
 Slicer settings for the Motion System &amp; ToolChanger.
 
-#### Notes.
+#### Updated Notes
+
+By utilizing the "Custom G-Code" sections of Simplify3D and PrusaSlicer, it's possible to increase and fine-tune the actions of the toolchanger.  
+Personally, I prefer to make calls to the prime and purge scripts via these custom toolchanges, as opposed to within the toolchangers tpre0.g/tpost0.g/tfree0.g files  
+Please note, that the PrusaSlicer profile should be using in conjunction with https://github.com/StevenCregan/RepRapFirmware-SD/tree/working_configuration  
+If you try to use it in the stock configuration, you're likely to break something.  
+Please take care when using any "untested" profiles/configurations
+
+
+#### Original Notes
 
 Tool changes are actioned simply by issuing T0, T1, T2, T3 and T-1. All tool changes are firmware controlled and no tool-change scripts are required in the slicer. To unload any tool at the end of a print issue a T-1 command and the active tool will be replaced back onto it's dock.
 
